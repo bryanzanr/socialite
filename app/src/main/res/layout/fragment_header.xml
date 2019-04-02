@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/white"/>
+        <TextView
+                android:id="@+id/tv_below"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_first"
+                android:text="@string/inc"
+                android:textColor="@color/white"/>
+
+        <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gres"
+                android:layout_toEndOf="@+id/tv_first"
+                android:text="@string/level"
+                android:textColor="@color/white"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/lev"
+                android:layout_below="@id/tv_level"
+                android:layout_toEndOf="@+id/tv_below"
+                android:text="@string/desc"
+                android:textColor="@color/white"/>
+
+        <TextView
+                android:id="@+id/tv_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_level"
+                android:layout_marginStart="@dimen/icon"
+                android:layout_toEndOf="@+id/tv_desc"
+                android:text="@string/exp"
+                android:textColor="@color/white"/>
+
+        <ProgressBar
+                android:id="@+id/progress_bar_level"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_toEndOf="@id/tv_level"
+                android:layout_width="@dimen/gres"
+                android:layout_height="@dimen/prog"
+                android:layout_marginStart="@dimen/icon"
+                android:layout_marginTop="@dimen/icon"
+                android:indeterminate="false"
+                android:progress="50"
+                android:progressDrawable="@drawable/pb_pd_level" />
+
+        <!--<ImageView-->
+                <!--android:id="@+id/iv_help"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/icon"-->
+                <!--android:layout_marginStart="@dimen/prog"-->
+                <!--android:layout_toEndOf="@id/tv_exp"-->
+                <!--app:srcCompat="@drawable/ic_help_black_24dp" />-->
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/icon"
+                app:srcCompat="@drawable/ic_local_gas_station_white_24dp" />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_back"
+                android:text="@string/gas"
+                android:textColor="@color/white"/>
+
+        <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_back"
+                android:layout_below="@id/tv_title"
+                android:text="@string/time"
+                android:textColor="@color/white"/>
+
+        <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_title"
+                android:padding="@dimen/icon"
+                app:srcCompat="@drawable/ic_local_hospital_white_24dp" />
+
+        <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_next"
+                android:text="@string/life"
+                android:textColor="@color/white"/>
+
+        <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_next"
+                android:layout_below="@id/tv_end"
+                android:text="@string/time"
+                android:textColor="@color/white"/>
+
+        <ImageView
+                android:id="@+id/iv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_end"
+                android:padding="@dimen/icon"
+                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_end"
+                android:text="@string/crew"
+                android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</LinearLayout>

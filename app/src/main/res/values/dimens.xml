@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="gres">100dp</dimen>
+    <dimen name="lev">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="prog">10dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="icon">5dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Street Socialite</string>
+    <string name="action_settings">Help</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="crew">99+ CREW</string>
+    <string name="gas">49/400 GAS</string>
+    <string name="life">66/100 LIFE</string>
+    <string name="cash">$123,456</string>
+    <string name="level">85</string>
+    <string name="desc">LEVEL |</string>
+    <string name="exp">EXP 845/850</string>
+    <string name="inc">+$789 IN 15.10</string>
+    <string name="time">00:60</string>
+</resources>
